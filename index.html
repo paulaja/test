@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  type="text/javascript"  src="jquery-1.12.4.js"></script>
+<script  type="text/javascript"  src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="style.css" rel="stylesheet">
+
+
+<script type="text/javascript">
+
+$(document).ready(function() 
+	{
+	  $('#tbtbasdfsadf').DataTable({    
+	    data: JSON.parse('[{"Name":"Alex","Position":"Developer","Office":"New York","Age":33,"Start Date":"01/01/10","Salary":123}, \
+	    {"Name":"","Position":"Developer","Office":"New York","Age":35,"Start Date":"01/01/10","Salary":123}, \
+	    {"Name":"David","Position":"Developer","Office":"New York","Age":27,"Start Date":"01/01/13","Salary":234}, \
+	    {"Name":"Sydney","Position":"Developer","Office":"New York","Age":45,"Start Date":"23/01/12","Salary":543}, \
+	    {"Name":"Kimberly","Position":"Developer","Office":"New York","Age":25,"Start Date":"01/04/13","Salary":2342}, \
+	    {"Name":"William","Position":"Developer","Office":"New York","Age":51,"Start Date":"01/01/14","Salary":234}, \
+	    {"Name":"Rebecca","Position":"Developer","Office":"New York","Age":43,"Start Date":"22/06/15","Salary":3452}, \
+	    {"Name":"Jocelyn","Position":"Developer","Office":"New York","Age":44,"Start Date":"01/01/12","Salary":53452}, \
+	    {"Name":"Ryan","Position":"Developer","Office":"New York","Age":46,"Start Date":"21/01/15","Salary":52434}, \
+	    {"Name":"Tyler","Position":"Developer","Office":"New York","Age":36,"Start Date":"01/07/15","Salary":23423}, \
+	    {"Name":"John","Position":"Developer","Office":"New York","Age":33,"Start Date":"01/08/15","Salary":1432}, \
+	    {"Name":"Michael","Position":"Developer","Office":"New York","Age":28,"Start Date":"01/12/15","Salary":4212}, \
+	    {"Name":"Joseph","Position":"Developer","Office":"Moskow","Age":29,"Start Date":"01/01/12","Salary":13423}, \
+	    {"Name":"Dylan","Position":"Developer","Office":"New York","Age":41,"Start Date":"12/03/13","Salary":1234}, \
+	    {"Name":"Nathan","Position":"Developer","Office":"New York","Age":43,"Start Date":"01/12/14","Salary":4321}, \
+	    {"Name":"Jessica","Position":"Developer","Office":"New York","Age":43,"Start Date":"01/01/10","Salary":4234}, \
+	    {"Name":"Justin","Position":"Developer","Office":"Moskow","Age":32,"Start Date":"01/01/10","Salary":3141}, \
+	    {"Name":"Ella","Position":"Developer","Office":"Moskow","Age":21,"Start Date":"01/08/10","Salary":41212}, \
+	    {"Name":"Morgan","Position":"Developer","Office":"New York","Age":32,"Start Date":"01/01/12","Salary":432}, \
+	    {"Name":"Rachel","Position":"Developer","Office":"New York","Age":31,"Start Date":"01/01/10","Salary":677}, \
+	    {"Name":"Katherine","Position":"Developer","Office":"Moskow","Age":,"Start Date":"01/01/10","Salary":645}, \
+	    {"Name":"Isaac","Position":"Developer","Office":"New York","Age":40,"Start Date":"23/01/10","Salary":6463}, \
+	    {"Name":"Gavin","Position":"Developer","Office":"New York","Age":48,"Start Date":"01/01/10","Salary":2345}, \
+	    {"Name":"Charles","Position":"Developer","Office":"Moskow","Age":38,"Start Date":"01/04/18","Salary":4632}, \
+	    {"Name":"Brian","Position":"Developer","Office":"New York","Age":31,"Start Date":"24/01/10","Salary":234}, \
+	    {"Name":"Connor","Position":"Developer","Office":"New York","Age":30,"Start Date":"01/01/10","Salary":52352} \
+						   ]'),
+	    columns: [
+	    {data: 'Name'}, 
+	    {data: 'Position'},
+	    {data: 'Office'},
+	    {data: 'Age'},
+	    {data: 'Start Date'},
+	    {data: 'Salary'}	    
+	    ]
+	
+	  });
+	});
+
+</script>	
+
+</head>
+<body>
+  <div id="container">
+    <table id="tbtbasdfsadf" class="display" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+		    <th>Name</th>
+		    <th>Position</th>
+		    <th>Office</th>
+		    <th>Age</th>
+		    <th>Start Date</th>
+	    	<th>Salary</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</body>
+
+</html>
